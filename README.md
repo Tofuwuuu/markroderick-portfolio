@@ -2,7 +2,7 @@
 
 Software engineer portfolio: home-page sections for about, experience, projects, and contact, a projects archive with case studies, and a resume download.
 
-**Live:** [https://markroderick.vercel.app](https://markroderick.vercel.app)
+**Live:** [https://markroderick-portfolio.vercel.app](https://markroderick-portfolio.vercel.app)
 
 ## Features
 
@@ -10,10 +10,10 @@ Home (`app/page.tsx`) is a single page in two columns on desktop: a sticky intro
 
 | Section | Route | What it uses |
 | --- | --- | --- |
-| About | [`/#about`](https://markroderick.vercel.app/#about) | `components/About.tsx`, `about` paragraphs in `content/profile.ts` |
-| Experience | [`/#experience`](https://markroderick.vercel.app/#experience) | `components/Experience.tsx`, roles in `content/experience.ts` |
-| Projects | [`/#projects`](https://markroderick.vercel.app/#projects) | `components/ProjectsSection.tsx`: featured cards from `content/featured.ts` (the first two as large showcases), then every other project in a "More projects" list. Each links to `/projects/[slug]` |
-| Contact | [`/#contact`](https://markroderick.vercel.app/#contact) | `components/Contact.tsx`: `profile.email` as a mailto link that copies the address when the clipboard is available, plus the resume button |
+| About | [`/#about`](https://markroderick-portfolio.vercel.app/#about) | `components/About.tsx`, `about` paragraphs in `content/profile.ts` |
+| Experience | [`/#experience`](https://markroderick-portfolio.vercel.app/#experience) | `components/Experience.tsx`, roles in `content/experience.ts` |
+| Projects | [`/#projects`](https://markroderick-portfolio.vercel.app/#projects) | `components/ProjectsSection.tsx`: featured cards from `content/featured.ts` (the first two as large showcases), then every other project in a "More projects" list. Each links to `/projects/[slug]` |
+| Contact | [`/#contact`](https://markroderick-portfolio.vercel.app/#contact) | `components/Contact.tsx`: `profile.email` as a mailto link that copies the address when the clipboard is available, plus the resume button |
 
 | Route | Purpose |
 | --- | --- |
@@ -81,7 +81,7 @@ Replace `public/resume.pdf`. The download name comes from `profile.resume.fileNa
 `.env*` files are gitignored. For local metadata, sitemap, and robots, create `.env.local`:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://markroderick.vercel.app
+NEXT_PUBLIC_SITE_URL=https://markroderick-portfolio.vercel.app
 ```
 
 `app/layout.tsx` uses it as `metadataBase`. `app/sitemap.ts` and `app/robots.ts` use it as the site origin. When the variable is unset, those three fall back to `https://example.com`.
@@ -96,10 +96,10 @@ npm run start
 Import the repository on [Vercel](https://vercel.com) and set:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://markroderick.vercel.app
+NEXT_PUBLIC_SITE_URL=https://markroderick-portfolio.vercel.app
 ```
 
-Production: [https://markroderick.vercel.app](https://markroderick.vercel.app).
+Production: [https://markroderick-portfolio.vercel.app](https://markroderick-portfolio.vercel.app).
 
 ## Screenshots
 

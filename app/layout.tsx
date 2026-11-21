@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `%s | ${profile.name}`,
   },
   description: profile.tagline,
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://markroderick.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://markroderick-portfolio.vercel.app"),
   openGraph: {
     title: `${profile.name} | ${profile.role}`,
     description: profile.tagline,
