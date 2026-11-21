@@ -1,6 +1,6 @@
 import { profile } from "./profile";
 
-export const SITE_URL = "https://markroderick.vercel.app/";
+export const SITE_URL = "https://markroderick-portfolio.vercel.app/";
 
 /** schema.org Person for the homepage. Every value comes from content already on the site. */
 export const personJsonLd = {

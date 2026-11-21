@@ -8,7 +8,7 @@ describe("Person JSON-LD", () => {
       "@context": "https://schema.org",
       "@type": "Person",
       name: "Mark Roderick I. Salise",
-      url: "https://markroderick.vercel.app/",
+      url: "https://markroderick-portfolio.vercel.app/",
       jobTitle: "Junior Software Engineer",
       description: "Full-stack web apps, built and shipped live.",
       sameAs: [
@@ -18,7 +18,7 @@ describe("Person JSON-LD", () => {
     });
     expect(personJsonLd.name).toBe(profile.name);
     expect(personJsonLd.description).toBe(profile.tagline);
-    expect(SITE_URL).toBe("https://markroderick.vercel.app/");
+    expect(SITE_URL).toBe("https://markroderick-portfolio.vercel.app/");
     expect(JSON.stringify(personJsonLd)).not.toMatch(/[—–]/);
   });
 });
